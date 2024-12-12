@@ -3,25 +3,38 @@ import { colors, fontFamily } from "@/styles/theme";
 
 export const s = StyleSheet.create({
   container: {
-    width: "100%",
-    height: 232,
-    marginBottom: -32,
-    backgroundColor: colors.gray[200],
+    padding: 32,
+    paddingBottom: 0,
+    borderTopStartRadius: 20,
+    borderTopEndRadius: 20,
+    backgroundColor: colors.gray[100]
   },
 
   name: {
-
+    fontSize: 20,
+    fontFamily: fontFamily.bold,
+    color: colors.gray[600],
+    marginVertical: 5,
   },
 
   description: {
-
+    fontSize: 16,
+    fontFamily: fontFamily.regular,
+    color: colors.gray[500]
   },
 
   group: {
-
+    width: '100%',
+    borderBottomWidth: 1,
+    borderBottomColor: colors.gray[200],
+    paddingBottom: 16,
+    marginBottom: 16
   },
   title: {
-
+    fontSize: 14,
+    fontFamily: fontFamily.medium,
+    color: colors.gray[500],
+    marginVertical: 10,
   },
   rule: {
     

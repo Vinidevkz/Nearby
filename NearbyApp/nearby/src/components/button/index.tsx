@@ -40,12 +40,13 @@ type IconProps = {
     icon: React.ComponentType<TablerIconProps>
 }
 
-function Icon({icon: Icon}: IconProps){
+export function Icon({icon: Icon}: IconProps){
     return(
         <Icon size={24} color={colors.gray[100]}/>
     )
 }
 
 Button.Title = Title;
+Button.Icon = Icon;
 
 export { Button };
