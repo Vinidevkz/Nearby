@@ -2,6 +2,7 @@ import { Text, useWindowDimensions } from "react-native";
 import BottomSheet, { BottomSheetFlashList, BottomSheetFlatList } from "@gorhom/bottom-sheet";
 import { IconSearch } from "@tabler/icons-react-native";
 
+import { router } from "expo-router"
 import { colors } from "@/styles/theme";
 import {s} from "./styles"
 import { Place, PlaceProps } from "../place";
@@ -24,7 +25,11 @@ export function Places({data}: Props){
             <BottomSheetFlatList
                 data={data}
                 keyExtractor={(item) => item.id}
-                renderItem={( { item } ) => <Place data={item}/>}
+                renderItem={( { item } ) => 
+                <Place
+                    data={item}
+                    onPress={() => router.push(`/market/${item.id}`)}
+                />}
                 contentContainerStyle={s.content}
                 ListHeaderComponent={() => (
                         <Text style={s.title}> Explore locais perto de você</Text>

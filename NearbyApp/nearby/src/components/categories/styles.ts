@@ -3,10 +3,11 @@ import {colors, fontFamily} from "@/styles/theme";
 
 export const s = StyleSheet.create({
     container: {
-        maxHeight: 36,
+        maxHeight: 70,
         position: "absolute",
         zIndex: 1,
-        top: 50,
+        top: 30,
+        paddingVertical: 20,
     },
 
     content: {

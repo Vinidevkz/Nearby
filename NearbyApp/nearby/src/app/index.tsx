@@ -9,7 +9,7 @@ import { Button } from "@/components/button";
 export default function Index(){
     return(
         <View style={{flex: 1, padding: 40, gap: 40}}>
-            <StatusBar backgroundColor={'#fff'} barStyle={'dark-content'}/>
+            <StatusBar backgroundColor={'#1b1b1b'} barStyle={'light-content'}/>
             <Welcome />
             <Steps />
             <Button onPress={() => router.navigate("/home")}>

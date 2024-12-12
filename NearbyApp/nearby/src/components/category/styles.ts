@@ -12,7 +12,8 @@ export const s = StyleSheet.create({
         alignItems: 'center',
         flexDirection: 'row',
         paddingHorizontal: 12,
-        gap: 10
+        paddingVertical: 5,
+        gap: 10,
     },
     name: {
         fontSize: 14,
@@ -21,7 +22,9 @@ export const s = StyleSheet.create({
     },
     containerSelected: {
         backgroundColor: colors.green.base,
-        borderWidth: 0
+        borderWidth: 1,
+        borderColor: colors.green.base,
+        elevation: 10
     },
     nameSelected: {
         color: colors.gray[100]
